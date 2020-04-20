@@ -10,3 +10,8 @@ $>^C
 15,45   *       *       *       *       python ~/code/socials.py > ~/public_html/socials.html
 0,20,40 *       *       *       *       ~/code/codeupdate.sh > /tmp/codeupdate.txt
 ```
+
+Installation:
+```
+git clone https://github.com/sadikkuzu/ctrl-c-club.git ~/code
+```
