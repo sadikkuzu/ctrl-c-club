@@ -13,5 +13,5 @@ $>^C
 
 Installation:
 ```
-git clone https://github.com/sadikkuzu/ctrl-c-club.git ~/code
+$ git clone https://github.com/sadikkuzu/ctrl-c-club.git ~/code
 ```
