@@ -1,14 +1,28 @@
 #!/usr/bin/env python
+# SADIK KUZU (c) 2020
+# http://ctrl-c.club/~sadikkuzu/socials.html
 
 import os
 import re
 import datetime
+import requests
 
 twitter = []
 instagram = []
 mastodon = []
 github = []
 found = []
+
+
+def ayikla(liste):
+    for adres in liste:
+        try:
+            r = requests.get('https://' + adres.split("https://")[-1])
+            if r.status_code != 200:
+                liste.remove(adres)
+        except:
+            liste.remove(adres)
+
 
 for filename in os.listdir('/home'):
 
@@ -22,6 +36,11 @@ for filename in os.listdir('/home'):
     ma = re.findall(r'[a-zA-Z0-9\.]+\/@[a-z0-9A-Z_]+',s)
     ig = re.findall(r'instagram\.com\/[a-z0-9A-Z_]+',s)
     gh = re.findall(r'https://github\.com\/[a-z0-9A-Z_]+',s)
+    
+    ayikla(tw)
+    ayikla(ma)
+    ayikla(ig)
+    ayikla(gh)
 
     if len(tw):
         for item in tw:
