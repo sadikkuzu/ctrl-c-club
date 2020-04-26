@@ -38,7 +38,7 @@ for filename in os.listdir('/home'):
     gh = re.findall(r'https://github\.com\/[a-z0-9A-Z_]+',s)
     
     ayikla(tw)
-    ayikla(ma)
+    # ayikla(ma)
     ayikla(ig)
     ayikla(gh)
 
