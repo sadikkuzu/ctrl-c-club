@@ -79,6 +79,30 @@ for filename in os.listdir('/home'):
                 found.append(item)
 
 
+def baloncuksort(liste, balon):
+    l2 = list()
+    g = (item for item in liste if item["username"] == str(balon))
+    while True:
+        try:
+            l2.append(g.next())
+        except:
+            break
+    g = (item for item in liste if item["username"] != str(balon))
+    while True:
+        try:
+            l2.append(g.next())
+        except:
+            break
+    return l2
+
+
+bubble = "sadikkuzu"
+github = baloncuksort(github, bubble)
+twitter = baloncuksort(twitter, bubble)
+mastadon = baloncuksort(mastadon, bubble)
+instagram = baloncuksort(instagram, bubble)
+
+
 def olustur(liste):
     adi = [ k for k,v in globals().items() if v == liste][0]
     harf = adi[0].upper()
