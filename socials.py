@@ -99,7 +99,7 @@ def baloncuksort(liste, balon):
 bubble = "sadikkuzu"
 github = baloncuksort(github, bubble)
 twitter = baloncuksort(twitter, bubble)
-mastadon = baloncuksort(mastadon, bubble)
+mastodon = baloncuksort(mastodon, bubble)
 instagram = baloncuksort(instagram, bubble)
 
 
