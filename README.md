@@ -5,8 +5,8 @@ $>^C
 <kbd>crontab</kbd>
 ```
 # m h  dom mon dow   command
+0       0       *       *       *       bash ~/code/startnewday.sh
 0       *       *       *       *       bash ~/code/dateanduptime.sh
-1       0       *       *       *       bash ~/code/startnewday.sh
 15,45   *       *       *       *       socials=$(python ~/code/socials.py) && echo $socials > ~/public_html/socials.html
 0,20,40 *       *       *       *       bash ~/code/codeupdate.sh > /tmp/codeupdate.txt
 ```
