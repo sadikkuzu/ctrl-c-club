@@ -127,7 +127,7 @@ print 'inspired by ',
 print '<a href="http://ctrl-c.club/~0x00ctrl" target="_blank">~0x00ctrl</a>\'s ',
 print '<a href="http://ctrl-c.club/~0x00ctrl/social.html" target="_blank">social</a>',
 print ' page.<br/>'
-print 'Developed by',
+print '<a href="https://github.com/sadikkuzu/ctrl-c-club/blob/master/socials.py" target="_blank">Developed</a> by',
 print '<a href="http://ctrl-c.club/~sadikkuzu" target="_blank">~sadikkuzu</a>'
 
 print '</body></html>'
