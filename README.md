@@ -13,7 +13,7 @@ $>^C
 
 Installation:
 ```
-$ git clone https://github.com/sadikkuzu/ctrl-c-club.git ~/code
+$ git clone --depth=1 https://github.com/sadikkuzu/ctrl-c-club.git ~/code
 ```
 
 
