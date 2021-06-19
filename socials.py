@@ -77,7 +77,7 @@ def main():
 
         ayikla(tw)
         # ayikla(ma)
-        ayikla(ig)
+        # ayikla(ig)
         ayikla(gh)
 
         if len(tw):
