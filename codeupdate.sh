@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 cd ~/code
-git pull -q
+git pull -q --ff-only
 cd -
