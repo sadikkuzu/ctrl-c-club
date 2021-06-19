@@ -132,7 +132,7 @@ def main():
 
     print(
         f"[*] <strong>Updated at :</strong> "
-        f"{str(datetime.datetime.now())}<br>"
+        f"{str(datetime.datetime.now())}<br>",
     )
 
     total_count = len(github) + len(twitter) + len(mastodon) + len(instagram)

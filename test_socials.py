@@ -15,7 +15,7 @@ from socials import baloncuksort as bs
             ["https://twitter.com/sadikkuzu_mba"],
             ["https://twitter.com/sadikkuzu_mba"],
         ),
-    ]
+    ],
 )
 def test_ayikla(adresler, expected_adresler):
     ayikla(adresler)
@@ -31,22 +31,22 @@ def test_ayikla(adresler, expected_adresler):
             [
                 {
                     'url': "https://twitter.com/dummy",
-                    'username': "dummy"
+                    'username': "dummy",
                 },
                 {
                     'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu"
+                    'username': "sadikkuzu",
                 },
             ],
             "sadikkuzu",
             [
                 {
                     'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu"
+                    'username': "sadikkuzu",
                 },
                 {
                     'url': "https://twitter.com/dummy",
-                    'username': "dummy"
+                    'username': "dummy",
                 },
             ],
         ),
@@ -67,20 +67,20 @@ def test_ayikla(adresler, expected_adresler):
                 {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
                 {
                     'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu"
+                    'username': "sadikkuzu",
                 },
             ],
             "sadikkuzu",
             [
                 {
                     'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu"
+                    'username': "sadikkuzu",
                 },
                 {'url': "https://twitter.com/dummy", 'username': "dummy"},
                 {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
             ],
         ),
-    ]
+    ],
 )
 def test_baloncuksort(liste, balon, expected_liste):
     assert bs(liste, balon) == expected_liste
