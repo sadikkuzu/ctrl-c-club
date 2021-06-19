@@ -72,7 +72,7 @@ def main():
 
         tw = re.findall(r'twitter\.com\/[a-z0-9A-Z_]+', s)
         ma = re.findall(r'[a-zA-Z0-9\.]+\/@[a-z0-9A-Z_]+', s)
-        ig = re.findall(r'instagram\.com\/[a-z0-9A-Z_]+', s)
+        ig = re.findall(r'instagram\.com\/[a-z0-9A-Z._]+', s)
         gh = re.findall(r'https://github\.com\/[a-z0-9A-Z_]+', s)
 
         ayikla(tw)
