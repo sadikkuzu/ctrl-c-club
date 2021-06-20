@@ -19,3 +19,5 @@ $ git clone --depth=1 https://github.com/sadikkuzu/ctrl-c-club.git ~/code
 
 ---
 <sup><sub> http://ctrl-c.club/~sadikkuzu/ </sub></sup>
+
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/sadikkuzu/ctrl-c-club/master.svg)](https://results.pre-commit.ci/latest/github/sadikkuzu/ctrl-c-club/master)
