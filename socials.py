@@ -66,7 +66,7 @@ def main():
 
         s = ''
         try:
-            s = open(f'/home/{filename}/public_html/index.html', 'r').read()
+            s = open(f'/home/{filename}/public_html/index.html').read()
         except Exception:
             continue
 
