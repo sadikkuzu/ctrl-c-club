@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SADIK KUZU (c) 2020-2021
+# SADIK KUZU (c) 2020-2022
 # http://ctrl-c.club/~sadikkuzu/socials.html
 
 import os
