@@ -30,54 +30,54 @@ def test_ayikla(adresler, expected_adresler):
         (
             [
                 {
-                    'url': "https://twitter.com/dummy",
-                    'username': "dummy",
+                    "url": "https://twitter.com/dummy",
+                    "username": "dummy",
                 },
                 {
-                    'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu",
+                    "url": "https://twitter.com/sadikkuzu_mba",
+                    "username": "sadikkuzu",
                 },
             ],
             "sadikkuzu",
             [
                 {
-                    'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu",
+                    "url": "https://twitter.com/sadikkuzu_mba",
+                    "username": "sadikkuzu",
                 },
                 {
-                    'url': "https://twitter.com/dummy",
-                    'username': "dummy",
+                    "url": "https://twitter.com/dummy",
+                    "username": "dummy",
                 },
             ],
         ),
         (
             [
-                {'url': "https://twitter.com/dummy", 'username': "dummy"},
-                {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
+                {"url": "https://twitter.com/dummy", "username": "dummy"},
+                {"url": "https://twitter.com/dummy2", "username": "dummy2"},
             ],
             "sadikkuzu",
             [
-                {'url': "https://twitter.com/dummy", 'username': "dummy"},
-                {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
+                {"url": "https://twitter.com/dummy", "username": "dummy"},
+                {"url": "https://twitter.com/dummy2", "username": "dummy2"},
             ],
         ),
         (
             [
-                {'url': "https://twitter.com/dummy", 'username': "dummy"},
-                {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
+                {"url": "https://twitter.com/dummy", "username": "dummy"},
+                {"url": "https://twitter.com/dummy2", "username": "dummy2"},
                 {
-                    'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu",
+                    "url": "https://twitter.com/sadikkuzu_mba",
+                    "username": "sadikkuzu",
                 },
             ],
             "sadikkuzu",
             [
                 {
-                    'url': "https://twitter.com/sadikkuzu_mba",
-                    'username': "sadikkuzu",
+                    "url": "https://twitter.com/sadikkuzu_mba",
+                    "username": "sadikkuzu",
                 },
-                {'url': "https://twitter.com/dummy", 'username': "dummy"},
-                {'url': "https://twitter.com/dummy2", 'username': "dummy2"},
+                {"url": "https://twitter.com/dummy", "username": "dummy"},
+                {"url": "https://twitter.com/dummy2", "username": "dummy2"},
             ],
         ),
     ],
