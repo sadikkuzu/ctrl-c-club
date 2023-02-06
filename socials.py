@@ -63,7 +63,6 @@ def main():
     global found
 
     for filename in os.listdir("/home"):
-
         s = ""
         try:
             s = open(f"/home/{filename}/public_html/index.html").read()
