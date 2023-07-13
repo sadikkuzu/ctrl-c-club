@@ -13,14 +13,13 @@ repos:
     rev: v3.0.0
     hooks:
     -   id: add-trailing-comma
-        args: [--py36-plus]
 -   repo: https://github.com/asottile/pyupgrade
     rev: v3.9.0
     hooks:
     -   id: pyupgrade
-        args: [--py37-plus]
+        args: [--py38-plus]
 -   repo: https://github.com/psf/black
-    rev: 23.3.0
+    rev: 23.7.0
     hooks:
     -   id: black
 -   repo: https://github.com/pycqa/flake8
