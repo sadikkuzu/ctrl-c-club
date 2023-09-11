@@ -10,7 +10,7 @@ repos:
     -   id: check-docstring-first
     -   id: check-merge-conflict
 -   repo: https://github.com/asottile/add-trailing-comma
-    rev: v3.0.1
+    rev: v3.1.0
     hooks:
     -   id: add-trailing-comma
 -   repo: https://github.com/asottile/pyupgrade
@@ -19,7 +19,7 @@ repos:
     -   id: pyupgrade
         args: [--py38-plus]
 -   repo: https://github.com/psf/black
-    rev: 23.7.0
+    rev: 23.9.1
     hooks:
     -   id: black
 -   repo: https://github.com/pycqa/flake8
