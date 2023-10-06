@@ -8,7 +8,7 @@ build==1.0.3
     # via pip-tools
 certifi==2023.7.22
     # via requests
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
     # via requests
 click==8.1.7
     # via pip-tools
@@ -23,7 +23,7 @@ idna==3.4
     # via requests
 iniconfig==2.0.0
     # via pytest
-packaging==23.1
+packaging==23.2
     # via
     #   build
     #   pytest
@@ -43,7 +43,7 @@ tomli==2.0.1
     #   pip-tools
     #   pyproject-hooks
     #   pytest
-urllib3==2.0.4
+urllib3==2.0.6
     # via requests
 wheel==0.41.2
     # via pip-tools
