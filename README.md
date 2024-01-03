@@ -17,6 +17,12 @@ $ git clone --depth=1 https://github.com/sadikkuzu/ctrl-c-club.git ~/code
 ```
 
 
+## Memories
+
+https://github.com/sadikkuzu/ctrl-c-club/assets/23168063/afacf77e-97e8-4b93-8e57-2c00dd5dfdc0
+
+https://github.com/sadikkuzu/ctrl-c-club/assets/23168063/24d0ab2f-6f30-4b12-bc14-06d8a03a5d32
+
 ---
 <sup><sub> http://ctrl-c.club/~sadikkuzu/ </sub></sup>
 
