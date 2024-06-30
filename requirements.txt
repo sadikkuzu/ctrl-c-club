@@ -21,7 +21,7 @@ exceptiongroup==1.2.1
     # via pytest
 idna==3.7
     # via requests
-importlib-metadata==7.2.1
+importlib-metadata==8.0.0
     # via build
 iniconfig==2.0.0
     # via pytest
@@ -40,6 +40,8 @@ pyproject-hooks==1.1.0
 pytest==8.2.2
     # via -r requirements.in
 requests==2.32.3
+    # via -r requirements.in
+squiral==0.4.5
     # via -r requirements.in
 tomli==2.0.1
     # via
