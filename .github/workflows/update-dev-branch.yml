@@ -1,0 +1,39 @@
+name: Update Dev Branch
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-dev:
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Git
+        run: |
+          git config --global user.name 'SADIK KUZU'
+          git config --global user.email 'sadikkuzu@hotmail.com'
+
+      - name: Pull latest changes from master
+        run: git pull origin master
+
+      - name: Switch to dev branch
+        run: git checkout dev
+
+      - name: Merge master into dev
+        run: git merge origin/master
+
+      - name: Push changes to dev branch
+        run: git push origin dev
