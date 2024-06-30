@@ -1,4 +1,7 @@
 squiral
 requests
+
 pytest
+
 pip-tools
+pre-commit
