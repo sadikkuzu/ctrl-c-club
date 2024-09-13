@@ -57,7 +57,7 @@ tomli==2.0.1
     #   build
     #   pip-tools
     #   pytest
-urllib3==2.2.2
+urllib3==2.2.3
     # via requests
 virtualenv==20.26.4
     # via pre-commit
