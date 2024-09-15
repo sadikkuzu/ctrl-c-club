@@ -20,9 +20,9 @@ exceptiongroup==1.2.2
     # via pytest
 filelock==3.16.0
     # via virtualenv
-identify==2.6.0
+identify==2.6.1
     # via pre-commit
-idna==3.8
+idna==3.9
     # via requests
 iniconfig==2.0.0
     # via pytest
