@@ -59,7 +59,7 @@ tomli==2.0.1
     #   pytest
 urllib3==2.2.3
     # via requests
-virtualenv==20.26.5
+virtualenv==20.26.6
     # via pre-commit
 wheel==0.44.0
     # via pip-tools
