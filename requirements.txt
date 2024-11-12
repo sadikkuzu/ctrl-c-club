@@ -52,7 +52,7 @@ requests==2.32.3
     # via -r requirements.in
 squiral==0.5.0
     # via -r requirements.in
-tomli==2.0.2
+tomli==2.1.0
     # via
     #   build
     #   pip-tools
