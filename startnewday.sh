@@ -10,4 +10,4 @@
     echo '<a href="http://ctrl-c.club/~sadikkuzu/" target="_blank">~sadikkuzu</a>'
     echo '<a href="http://ctrl-c.club/~pgadey/updated.html" target="_blank">last updated pages</a>'
     echo '<a href="https://github.com/sadikkuzu/ctrl-c-club/blob/master/startnewday.sh" target="_blank">@sadikkuzu</a><br/>'
-} >> ~/public_html/$(date +%Y-%m-%d).html
+} >> ~/public_html/"$(date +%Y-%m-%d)".html
