@@ -60,7 +60,6 @@ def main():
     global instagram
     global mastodon
     global github
-    global found
 
     for filename in os.listdir("/home"):
         s = ""
