@@ -32,6 +32,7 @@ packaging==24.2
     # via
     #   build
     #   pytest
+    #   wheel
 pip-tools==7.4.1
     # via -r requirements.in
 platformdirs==4.3.7
@@ -61,7 +62,7 @@ urllib3==2.3.0
     # via requests
 virtualenv==20.30.0
     # via pre-commit
-wheel==0.45.1
+wheel==0.46.1
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
