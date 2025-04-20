@@ -20,7 +20,7 @@ exceptiongroup==1.2.2
     # via pytest
 filelock==3.18.0
     # via virtualenv
-identify==2.6.9
+identify==2.6.10
     # via pre-commit
 idna==3.10
     # via requests
@@ -28,7 +28,7 @@ iniconfig==2.1.0
     # via pytest
 nodeenv==1.9.1
     # via pre-commit
-packaging==24.2
+packaging==25.0
     # via
     #   build
     #   pytest
