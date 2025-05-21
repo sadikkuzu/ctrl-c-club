@@ -12,7 +12,7 @@ cfgv==3.4.0
     # via pre-commit
 charset-normalizer==3.4.2
     # via requests
-click==8.2.0
+click==8.2.1
     # via pip-tools
 distlib==0.3.9
     # via virtualenv
