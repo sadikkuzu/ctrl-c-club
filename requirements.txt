@@ -40,11 +40,13 @@ pluggy==1.6.0
     # via pytest
 pre-commit==4.2.0
     # via -r requirements.in
+pygments==2.19.1
+    # via pytest
 pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pytest==8.3.5
+pytest==8.4.0
     # via -r requirements.in
 pyyaml==6.0.2
     # via pre-commit
@@ -57,7 +59,7 @@ tomli==2.2.1
     #   build
     #   pip-tools
     #   pytest
-typing-extensions==4.13.2
+typing-extensions==4.14.0
     # via exceptiongroup
 urllib3==2.4.0
     # via requests
