@@ -50,7 +50,7 @@ pytest==8.4.0
     # via -r requirements.in
 pyyaml==6.0.2
     # via pre-commit
-requests==2.32.3
+requests==2.32.4
     # via -r requirements.in
 squiral==0.5.0
     # via -r requirements.in
