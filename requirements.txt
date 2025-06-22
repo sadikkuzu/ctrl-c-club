@@ -40,7 +40,7 @@ pluggy==1.6.0
     # via pytest
 pre-commit==4.2.0
     # via -r requirements.in
-pygments==2.19.1
+pygments==2.19.2
     # via pytest
 pyproject-hooks==1.2.0
     # via
