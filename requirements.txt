@@ -63,7 +63,7 @@ typing-extensions==4.14.1
     # via exceptiongroup
 urllib3==2.5.0
     # via requests
-virtualenv==20.33.0
+virtualenv==20.33.1
     # via pre-commit
 wheel==0.45.1
     # via pip-tools
