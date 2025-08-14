@@ -60,10 +60,12 @@ tomli==2.2.1
     #   pip-tools
     #   pytest
 typing-extensions==4.14.1
-    # via exceptiongroup
+    # via
+    #   exceptiongroup
+    #   virtualenv
 urllib3==2.5.0
     # via requests
-virtualenv==20.33.1
+virtualenv==20.34.0
     # via pre-commit
 wheel==0.45.1
     # via pip-tools
