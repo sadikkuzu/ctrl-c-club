@@ -65,7 +65,7 @@ typing-extensions==4.15.0
     #   virtualenv
 urllib3==2.5.0
     # via requests
-virtualenv==20.35.1
+virtualenv==20.35.3
     # via pre-commit
 wheel==0.45.1
     # via pip-tools
