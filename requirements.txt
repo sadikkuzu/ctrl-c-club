@@ -24,7 +24,7 @@ identify==2.6.15
     # via pre-commit
 idna==3.11
     # via requests
-iniconfig==2.1.0
+iniconfig==2.3.0
     # via pytest
 nodeenv==1.9.1
     # via pre-commit
