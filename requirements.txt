@@ -38,7 +38,7 @@ platformdirs==4.5.0
     # via virtualenv
 pluggy==1.6.0
     # via pytest
-pre-commit==4.3.0
+pre-commit==4.4.0
     # via -r requirements.in
 pygments==2.19.2
     # via pytest
@@ -46,7 +46,7 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pytest==8.4.2
+pytest==9.0.0
     # via -r requirements.in
 pyyaml==6.0.3
     # via pre-commit
