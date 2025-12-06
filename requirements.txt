@@ -34,7 +34,7 @@ packaging==25.0
     #   pytest
 pip-tools==7.5.2
     # via -r requirements.in
-platformdirs==4.5.0
+platformdirs==4.5.1
     # via virtualenv
 pluggy==1.6.0
     # via pytest
@@ -63,7 +63,7 @@ typing-extensions==4.15.0
     # via
     #   exceptiongroup
     #   virtualenv
-urllib3==2.5.0
+urllib3==2.6.0
     # via requests
 virtualenv==20.35.4
     # via pre-commit
