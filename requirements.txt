@@ -63,7 +63,7 @@ typing-extensions==4.15.0
     # via
     #   exceptiongroup
     #   virtualenv
-urllib3==2.6.1
+urllib3==2.6.2
     # via requests
 virtualenv==20.35.4
     # via pre-commit
