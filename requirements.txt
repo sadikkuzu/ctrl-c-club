@@ -38,7 +38,7 @@ platformdirs==4.5.1
     # via virtualenv
 pluggy==1.6.0
     # via pytest
-pre-commit==4.5.0
+pre-commit==4.5.1
     # via -r requirements.in
 pygments==2.19.2
     # via pytest
