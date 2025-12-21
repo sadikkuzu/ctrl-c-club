@@ -26,7 +26,7 @@ idna==3.11
     # via requests
 iniconfig==2.3.0
     # via pytest
-nodeenv==1.9.1
+nodeenv==1.10.0
     # via pre-commit
 packaging==25.0
     # via
