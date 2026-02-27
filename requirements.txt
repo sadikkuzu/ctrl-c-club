@@ -53,7 +53,7 @@ pyproject-hooks==1.2.0
     #   pip-tools
 pytest==9.0.2
     # via -r requirements.in
-python-discovery==1.0.0
+python-discovery==1.1.0
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
