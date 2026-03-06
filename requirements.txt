@@ -37,7 +37,7 @@ packaging==26.0
     #   wheel
 pip-tools==7.5.3
     # via -r requirements.in
-platformdirs==4.9.2
+platformdirs==4.9.4
     # via
     #   python-discovery
     #   virtualenv
