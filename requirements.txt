@@ -57,7 +57,7 @@ python-discovery==1.2.1
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
-requests==2.33.0
+requests==2.33.1
     # via -r requirements.in
 squiral==0.5.1
     # via -r requirements.in
