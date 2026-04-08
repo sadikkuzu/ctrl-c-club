@@ -51,9 +51,9 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pytest==9.0.2
+pytest==9.0.3
     # via -r requirements.in
-python-discovery==1.2.1
+python-discovery==1.2.2
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
