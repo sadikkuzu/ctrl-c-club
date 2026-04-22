@@ -24,7 +24,7 @@ filelock==3.29.0
     #   virtualenv
 identify==2.6.19
     # via pre-commit
-idna==3.11
+idna==3.12
     # via requests
 iniconfig==2.3.0
     # via pytest
@@ -43,7 +43,7 @@ platformdirs==4.9.6
     #   virtualenv
 pluggy==1.6.0
     # via pytest
-pre-commit==4.5.1
+pre-commit==4.6.0
     # via -r requirements.in
 pygments==2.20.0
     # via pytest
