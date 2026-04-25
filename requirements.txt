@@ -30,7 +30,7 @@ iniconfig==2.3.0
     # via pytest
 nodeenv==1.10.0
     # via pre-commit
-packaging==26.1
+packaging==26.2
     # via
     #   build
     #   pytest
