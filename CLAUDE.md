@@ -1,10 +1,10 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for Claude Code (claude.ai/code) in this repo.
 
 ## Project Overview
 
-Personal site automation for ctrl-c.club (~sadikkuzu). Scans user profile pages on the server, extracts social media links (Twitter, Instagram, Mastodon, GitHub), validates them, and generates an HTML page output to `~/public_html/socials.html` via cron.
+Personal site automation for ctrl-c.club (~sadikkuzu). Scans user profile pages, extracts social links (Twitter, Instagram, Mastodon, GitHub), validates, generates HTML → `~/public_html/socials.html` via cron.
 
 ## Commands
 
@@ -32,14 +32,14 @@ pip-compile -vU
 
 ## Architecture
 
-All core logic lives in `socials.py`:
+All core logic in `socials.py`:
 
-- `ayikla(adresler)` — filters a list of URLs by making live HTTP GET requests; drops unreachable ones
-- `baloncuksort(liste, balon)` — bubble-sorts a specific username to the front of a list
-- `olustur(liste)` — renders a list of `{url, username}` dicts into an HTML snippet
-- `main()` — glues it all together: scans `/home/*/public_html/index.html` for social links via regex, validates, sorts, and prints the full HTML page to stdout
+- `ayikla(adresler)` — filters URL list via live HTTP GET; drops unreachable
+- `baloncuksort(liste, balon)` — bubble-sorts username to front of list
+- `olustur(liste)` — renders `{url, username}` dicts into HTML snippet
+- `main()` — scans `/home/*/public_html/index.html` for social links via regex, validates, sorts, prints full HTML page to stdout
 
-The four global lists (`twitter`, `instagram`, `mastodon`, `github`) accumulate `{url, username}` dicts during the scan. A `found` list deduplicates URLs across users.
+Four global lists (`twitter`, `instagram`, `mastodon`, `github`) accumulate `{url, username}` dicts. `found` list deduplicates URLs across users.
 
 **Cron schedule (documented in README):**
 ```
