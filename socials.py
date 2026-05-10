@@ -7,11 +7,11 @@ import re
 
 import requests
 
-twitter = []
-instagram = []
-mastodon = []
-github = []
-found = []
+twitter: list[dict] = []
+instagram: list[dict] = []
+mastodon: list[dict] = []
+github: list[dict] = []
+found: list[str] = []
 
 
 def ayikla(adresler):
