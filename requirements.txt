@@ -53,7 +53,7 @@ pyproject-hooks==1.2.0
     #   pip-tools
 pytest==9.0.3
     # via -r requirements.in
-python-discovery==1.4.0
+python-discovery==1.4.2
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
@@ -72,7 +72,7 @@ typing-extensions==4.15.0
     #   virtualenv
 urllib3==2.7.0
     # via requests
-virtualenv==21.4.2
+virtualenv==21.4.3
     # via pre-commit
 wheel==0.47.0
     # via pip-tools
