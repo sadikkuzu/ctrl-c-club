@@ -51,7 +51,7 @@ pyproject-hooks==1.2.0
     # via
     #   build
     #   pip-tools
-pytest==9.1.0
+pytest==9.1.1
     # via -r requirements.in
 python-discovery==1.4.2
     # via virtualenv
