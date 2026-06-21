@@ -59,7 +59,7 @@ pyyaml==6.0.3
     # via pre-commit
 requests==2.34.2
     # via -r requirements.in
-squiral==0.5.1
+squiral==0.6.0
     # via -r requirements.in
 tomli==2.4.1
     # via
