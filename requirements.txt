@@ -72,7 +72,7 @@ typing-extensions==4.16.0
     #   virtualenv
 urllib3==2.7.0
     # via requests
-virtualenv==21.6.0
+virtualenv==21.6.1
     # via pre-commit
 wheel==0.47.0
     # via pip-tools
