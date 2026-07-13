@@ -4,7 +4,7 @@ Guidance for Claude Code (claude.ai/code) in this repo.
 
 ## Project Overview
 
-Personal site automation for ctrl-c.club (~sadikkuzu). Scans user profile pages, extracts social links (Twitter, Instagram, Mastodon, GitHub), validates, generates HTML → `~/public_html/socials.html` via cron.
+Personal site automation for ctrl-c.club (~sadikkuzu). Scans user profile pages, extracts social links (Twitter, X, Instagram, GitHub), validates, generates HTML → `~/public_html/socials.html` via cron.
 
 ## Commands
 
@@ -19,6 +19,9 @@ pytest
 pytest test_socials.py::test_ayikla       # single test
 pytest test_socials.py::test_baloncuksort  # single test
 ```
+Tests hit live twitter.com — require network.
+
+Python 3.10+ (CI pins 3.10; pyupgrade uses --py310-plus).
 
 **Lint / format (pre-commit hooks):**
 ```bash
@@ -39,7 +42,7 @@ All core logic in `socials.py`:
 - `olustur(liste)` — renders `{url, username}` dicts into HTML snippet
 - `main()` — scans `/home/*/public_html/index.html` for social links via regex, validates, sorts, prints full HTML page to stdout
 
-Four global lists (`twitter`, `instagram`, `mastodon`, `github`) accumulate `{url, username}` dicts. `found` list deduplicates URLs across users.
+Four global lists (`twitter`, `x`, `instagram`, `github`) accumulate `{url, username}` dicts. `found` list deduplicates URLs across users.
 
 **Cron schedule (documented in README):**
 ```
