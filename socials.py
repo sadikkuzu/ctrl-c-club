@@ -8,8 +8,8 @@ import re
 import requests
 
 twitter: list[dict] = []
+x: list[dict] = []
 instagram: list[dict] = []
-mastodon: list[dict] = []
 github: list[dict] = []
 found: list[str] = []
 
@@ -42,7 +42,7 @@ def baloncuksort(liste, balon):
 
 
 def olustur(liste):
-    adi = [k for k, v in globals().items() if v == liste][0]
+    adi = [k for k, v in globals().items() if v is liste][0]
     harf = adi[0].upper()
     print(f"<strong>[*] {str(adi)}</strong> ({str(len(liste))})<br>")
     for item in liste:
@@ -57,8 +57,8 @@ def olustur(liste):
 
 def main():
     global twitter
+    global x
     global instagram
-    global mastodon
     global github
 
     for filename in os.listdir("/home"):
@@ -69,12 +69,12 @@ def main():
             continue
 
         tw = re.findall(r"twitter\.com\/[a-z0-9A-Z_]+", s)
-        ma = re.findall(r"[a-zA-Z0-9\.]+\/@[a-z0-9A-Z_]+", s)
+        xc = re.findall(r"\bx\.com\/[a-z0-9A-Z_]+", s)
         ig = re.findall(r"instagram\.com\/[a-z0-9A-Z._]+", s)
         gh = re.findall(r"https://github\.com\/[a-z0-9A-Z_]+", s)
 
         ayikla(tw)
-        # ayikla(ma)
+        ayikla(xc)
         # ayikla(ig)
         ayikla(gh)
 
@@ -89,10 +89,10 @@ def main():
                     )
                     found.append(item)
 
-        if len(ma):
-            for item in ma:
-                if item not in found and "medium.com" not in item:
-                    mastodon.append(
+        if len(xc):
+            for item in xc:
+                if item not in found:
+                    x.append(
                         {
                             "url": item,
                             "username": filename,
@@ -125,7 +125,7 @@ def main():
     bubble = "sadikkuzu"
     github = baloncuksort(github, bubble)
     twitter = baloncuksort(twitter, bubble)
-    mastodon = baloncuksort(mastodon, bubble)
+    x = baloncuksort(x, bubble)
     instagram = baloncuksort(instagram, bubble)
 
     print(
@@ -139,12 +139,12 @@ def main():
     simdi: str = str(datetime.datetime.now())
     print(f"[*] <strong>Updated at :</strong> {simdi}<br>")
 
-    total_count = len(github) + len(twitter) + len(mastodon) + len(instagram)
+    total_count = len(github) + len(twitter) + len(x) + len(instagram)
     print(f"[*] <strong>Total count:</strong> {total_count}<br><br>")
 
     olustur(github)
     olustur(twitter)
-    olustur(mastodon)
+    olustur(x)
     olustur(instagram)
 
     print(
