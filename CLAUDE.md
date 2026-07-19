@@ -10,14 +10,15 @@ Personal site automation for ctrl-c.club (~sadikkuzu). Scans user profile pages,
 
 **Install dependencies:**
 ```bash
-pip install -r requirements.txt
+uv sync                              # local dev (creates .venv from uv.lock)
+pip install -r requirements.txt      # server fallback (no uv on ctrl-c.club)
 ```
 
 **Run tests:**
 ```bash
-pytest
-pytest test_socials.py::test_ayikla       # single test
-pytest test_socials.py::test_baloncuksort  # single test
+uv run pytest
+uv run pytest test_socials.py::test_ayikla       # single test
+uv run pytest test_socials.py::test_baloncuksort  # single test
 ```
 Tests hit live twitter.com — require network.
 
@@ -30,8 +31,10 @@ pre-commit run --all-files --color always
 
 **Update pinned dependencies:**
 ```bash
-pip-compile -vU
+uv lock --upgrade
+uv export --no-hashes --no-emit-project -o requirements.txt
 ```
+`uv.lock` is the source of truth; `requirements.txt` is an export kept for pip-only installs on the server. Upgrade a single package with `uv lock --upgrade-package <name>`.
 
 ## Architecture
 
@@ -51,7 +54,7 @@ Four global lists (`twitter`, `x`, `instagram`, `github`) accumulate `{url, user
 ```
 
 **GitHub Actions:**
-- `upgrader.yml` — daily pip-compile + pre-commit autoupdate on `dev`
+- `upgrader.yml` — daily `uv lock --upgrade` + requirements.txt re-export + pre-commit autoupdate on `dev`
 - `update-dev-branch.yml` — merges `master` into `dev` on every master push
 
 ## Branch Model
