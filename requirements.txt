@@ -52,5 +52,5 @@ typing-extensions==4.16.0 ; python_full_version < '3.11'
     #   virtualenv
 urllib3==2.7.0
     # via requests
-virtualenv==21.7.0
+virtualenv==21.7.1
     # via pre-commit
