@@ -24,7 +24,7 @@ iniconfig==2.3.0
     # via pytest
 nodeenv==1.10.0
     # via pre-commit
-packaging==26.2
+packaging==26.3
     # via pytest
 platformdirs==4.11.0
     # via virtualenv
