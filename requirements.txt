@@ -34,7 +34,7 @@ pre-commit==4.6.2
 pygments==2.21.0
     # via pytest
 pytest==9.1.1
-python-discovery==1.5.3
+python-discovery==1.6.0
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
@@ -50,5 +50,5 @@ typing-extensions==4.16.0 ; python_full_version < '3.11'
     #   virtualenv
 urllib3==2.7.0
     # via requests
-virtualenv==21.7.5
+virtualenv==21.7.7
     # via pre-commit
