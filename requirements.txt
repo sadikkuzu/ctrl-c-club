@@ -28,7 +28,7 @@ packaging==26.3
     # via
     #   pytest
     #   virtualenv
-platformdirs==4.12.3
+platformdirs==4.12.4
     # via virtualenv
 pluggy==1.6.0
     # via pytest
@@ -44,7 +44,7 @@ requests==2.34.2
     # via ctrl-c-club
 squiral==0.6.0
     # via ctrl-c-club
-tomli==2.4.1 ; python_full_version < '3.11'
+tomli==2.5.0 ; python_full_version < '3.11'
     # via pytest
 typing-extensions==4.16.0 ; python_full_version < '3.11'
     # via
