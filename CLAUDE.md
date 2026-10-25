@@ -22,7 +22,7 @@ uv run pytest test_socials.py::test_baloncuksort  # single test
 ```
 Tests hit live twitter.com — require network.
 
-Python 3.10+ (CI pins 3.10; pyupgrade uses --py310-plus).
+Python 3.11+ (CI pins 3.11; pyupgrade uses --py311-plus).
 
 **Lint / format (pre-commit hooks):**
 ```bash
