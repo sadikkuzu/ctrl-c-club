@@ -10,7 +10,7 @@ colorama==0.4.6 ; sys_platform == 'win32'
     # via pytest
 distlib==0.4.4
     # via virtualenv
-filelock==4.2.4
+filelock==4.2.5
     # via
     #   python-discovery
     #   virtualenv
@@ -20,21 +20,21 @@ idna==3.20
     # via requests
 iniconfig==2.3.1
     # via pytest
-nodeenv==1.11.0
+nodeenv==1.11.1
     # via pre-commit
 packaging==26.3
     # via
     #   pytest
     #   virtualenv
-platformdirs==4.13.5
+platformdirs==4.14.0
     # via virtualenv
 pluggy==1.7.0
     # via pytest
 pre-commit==4.7.0
 pygments==2.21.0
     # via pytest
-pytest==9.1.1
-python-discovery==1.6.4
+pytest==9.2.0
+python-discovery==1.9.0
     # via virtualenv
 pyyaml==6.0.3
     # via pre-commit
@@ -44,5 +44,5 @@ squiral==0.6.1
     # via ctrl-c-club
 urllib3==2.8.0
     # via requests
-virtualenv==21.14.13
+virtualenv==21.15.2
     # via pre-commit
